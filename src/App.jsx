@@ -1,38 +1,36 @@
 
 import './App.css';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import {Routes,Route } from 'react-router-dom';
-import Layout from './components/Layout';
+import Nav from './components/Nav';
 import CustomHook from './components/CustomHook';
 import Usereducer from './components/Usereducer';
 import Home from './components/Home';
 import ErrorBound from './components/ErrorBound';
 import Error from './components/Error';
+// import '../Home.css'
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <main className="main-container">
        
-        
-        <p>
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="hhttps://www.w3schools.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+         Learn to Code
         </a>
-      </header>
+      </main>
     <div>
       <Router>
         <Routes>
           
-          <Route path='/' element={<Layout/>}>
+          <Route path='/' element={<Nav/>}>
              <Route index element={<Home/>}/>
            <Route path='/customhook'  element={<CustomHook/>}/>
            <Route path='/usereducer'  element={<Usereducer/>}/>

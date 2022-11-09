@@ -1,18 +1,35 @@
-import '../App.css';
+// import './Home.css'
 import React from 'react'
 
 const CustomHook = () => {
   return (
     <div>
-    <h1>React: How to create a Custom Hook</h1>
-    <p>React introduced Hooks quite a while ago. With their release, Hooks gave function components the ability to use state and side-effects with built-in Hooks such as React's useState Hook and React's useEffect Hook.</p>
-     <p>There are only a handful built-in Hooks (e.g. useReducer, useCallback, useMemo, useContext) provided by React though. However, by using these Hooks as a foundation, React developers can create their own hooks called custom hooks.</p>
-     <h2>rules to creating Custom hooks:</h2>
+    <h1>Custom Hook</h1>
+    <p>A custom hook is a special JavaScript function whose name starts with 'use' and can be used to call other hooks. Let's take a look at some major differences between a custom React JS hook and React JS components.</p>
+     
+     <p>Some major differences between a custom React JS hook and React JS components:</p>
      <ul>
-
-      <li>Custom Hooks are named with "use" as prefix. For example, a custom hook could be named useLocalStorage or useAuthentication. In our case, the custom hook will be named useBoolean.</li>
-      <li>Custom Hooks consist of built-in React Hooks or other custom Hooks. Therefore a custom Hook is always a new composition of one or multiple Hooks. If a custom Hook does not use any hooks internally, it's not a custom Hook and shouldn't have the prefix "use".</li>
+      <li>A software developer can choose what argument the custom hook has and what should the argument return.</li>
+      <li> A custom hook does not require a specific signature.</li>
+       <li>A custom hook always starts with the name ‘use’</li>
      </ul>
+
+      <h2>What are the advantages of using a custom React JS hook?</h2>
+      <ol>
+      <li>Reusability</li>
+        <li>Testability</li>
+        <li>Reusability</li>
+        
+      </ol>
+
+       <a
+          className="Hook-link"
+          href="https://reactjs.org/docs/hooks-custom.html#using-a-custom-hook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn More About Custom Hook
+        </a>
     </div>
   )
 }

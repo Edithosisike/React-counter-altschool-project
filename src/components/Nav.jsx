@@ -1,10 +1,11 @@
 import '../App.css';
+// import './Home.css'
 import React from 'react'
 import {Link,Outlet} from 'react-router-dom'
-const Layout = () => {
+const Nav = () => {
   return (
     <div  className='app'>
-        <ul className='nav'>
+        <ul className='nav-bar'>
         
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/customhook'>CustomHook</Link></li>    
@@ -16,4 +17,4 @@ const Layout = () => {
   )
 }
 
-export default Layout;
+export default Nav;

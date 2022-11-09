@@ -1,4 +1,5 @@
 import '../App.css';
+// import './Home.css'
 import { useReducer } from "react";
 const useCounter = (num) => {
   const initialValue = { count: num };

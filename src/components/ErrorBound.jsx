@@ -1,4 +1,5 @@
 import '../App.css';
+// import './Home.css'
 import { ErrorBoundary } from "react-error-boundary";
 import { BiErrorCircle } from "react-icons/bi";
 const ErrorFallback = ({ error}) => {
@@ -15,8 +16,8 @@ const Greeting = ({ subject}) => {
   </div>);
 };
 
-const Farewell = ({ subject }) => {
-  return <div>Goodbye {subject.toUpperCase()}</div>;
+const Goodbye = ({ subject }) => {
+  return <div>bye bye {subject.toUpperCase()}</div>;
 };
 const FavouriteSport = () => {
   return <div>Tennis</div>;
@@ -26,7 +27,7 @@ const ErrorBound = () => {
     <>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <Greeting subject='world'/>
-        <Farewell/>
+        <Goodbye/>
         <FavouriteSport/>
       </ErrorBoundary>
     </>
@@ -36,28 +37,4 @@ export default ErrorBound;
 
 
 
-// import React, { components} from 'react'
 
-// class ErrorBoundary extends components {
-//   constructor(props) 
-//   super(props)
-
-//   this.state = {
-//     hasError: false
-//   }
-// }
-
-// static getDerivedStateFromErro(error) {
-//   return{
-//     hasError: true
-//   }
-// }
-
-// render() {
-//   if (this.state.hasError) {
-//     return <h1>Something went wrong</h1>
-//   }
-//   return this.props.children
-// }
-
-// export default ErrorBoundary;
