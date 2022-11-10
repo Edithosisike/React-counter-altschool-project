@@ -1,5 +1,5 @@
 import '../App.css';
-// import './Home.css'
+import './Home.css'
 import React from 'react'
 
 const Usereducer = () => {

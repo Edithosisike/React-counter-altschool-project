@@ -1,10 +1,10 @@
 import '../App.css';
-// import './Home.css'
+import './Home.css'
 import { ErrorBoundary } from "react-error-boundary";
 import { BiErrorCircle } from "react-icons/bi";
 const ErrorFallback = ({ error}) => {
   return (
-    <div className="error-f">
+    <div className="error-boundary">
       <h1>Something went wrong</h1>
       <p className="pre" style={{ color: "red" }}><span><BiErrorCircle className="icon-f"/></span><span>{error.message}</span></p>
     </div>

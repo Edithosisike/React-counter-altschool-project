@@ -1,0 +1,68 @@
+nav{
+  display:flex;
+ align-items: center;
+  justify-content: space-between;
+  padding:  25px 60px;
+}
+.logo{
+  padding:0;
+  margin: 0;
+}
+#nav-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#nav-link li{
+  list-style: none;
+  padding: 0 30px;
+  position: relative;
+  
+}
+
+#nav-link li a{
+  color:  #668dcc;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+#nav-link li a:hover{
+  color: blue;
+}
+.navbar-container{
+  display:flex;
+  margin-right: 40px;
+  margin-top: -440px;
+}
+.logo-text{
+  font-weight: 600;
+  background:none;
+  color:  #668dcc;;
+}
+.home-page{
+  padding-top: 30%;
+  margin-left: -350px;
+}
+button{
+  width: 250px;
+  height: 60px;
+  margin: 40px;
+  border-radius: 10px;
+background-color:  #668dcc;
+  border: none;
+}
+
+.btn{
+ font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.react-counter{
+  font-size: 40px;
+  color:  #668dcc;
+}
+

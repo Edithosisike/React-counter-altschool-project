@@ -1,9 +1,9 @@
-// import './Home.css'
+import './Home.css'
 import React from 'react'
 
 const CustomHook = () => {
   return (
-    <div>
+    <div className="custom-hook">
     <h1>Custom Hook</h1>
     <p>A custom hook is a special JavaScript function whose name starts with 'use' and can be used to call other hooks. Let's take a look at some major differences between a custom React JS hook and React JS components.</p>
      
