@@ -1,14 +1,12 @@
-nav{
+
+ nav{
   display:flex;
  align-items: center;
   justify-content: space-between;
-  padding:  25px 60px;
-}
-.logo{
-  padding:0;
-  margin: 0;
-}
-#nav-link{
+  padding:  30px 450px;
+ }
+
+#nav-link{                                                   
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,10 +31,14 @@ nav{
   color: blue;
 }
 .navbar-container{
-  display:flex;
-  margin-right: 40px;
-  margin-top: -440px;
+   display:flex;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    max-width: 250px;
+  margin-left:  50px;
 }
+
 .logo-text{
   font-weight: 600;
   background:none;
@@ -44,7 +46,7 @@ nav{
 }
 .home-page{
   padding-top: 30%;
-  margin-left: -350px;
+  margin-left: -300px;
 }
 button{
   width: 250px;
@@ -53,6 +55,9 @@ button{
   border-radius: 10px;
 background-color:  #668dcc;
   border: none;
+}
+butoon:hover{
+ 
 }
 
 .btn{
@@ -66,3 +71,65 @@ background-color:  #668dcc;
   color:  #668dcc;
 }
 
+.custom-hook,
+.usereducer-hook{
+   padding-top: 5%;
+  margin-left: -400px;
+  font-size: 20px;
+}
+.custom-hook-head{
+/*  margin: 0 auto; */
+  padding-bottom: 10px;
+  margin-right:30px;
+  font-size: 30px;
+  padding-top: 20px;
+}
+.custom-hook p,  h4{
+  padding-top: 10px;
+  padding-bottom:5px;
+}
+.custom-hook-btn, 
+.usereducer-btn,
+.error-404-btn{
+  width: 500px;
+  height: 80px;
+  font-size:25px;
+  border-radius:15px;
+  padding-top: -10px;
+}
+
+ button:hover{
+   transition: 0.3s ease-in-out;
+  background-color:skyblue;
+}
+.custom-hook-btn a,
+.usereducer-btn a{
+  text-decoration: none;
+  color: #333333;
+}
+
+
+.usereducer-hook h1, h3, p{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.usereducer-hook p{
+   font-size: 20px;
+}
+.error-boundary, .error-404{
+  text-align: center;
+  justify-content: center;
+  padding-top: 20%;
+  margin-left: -200px;
+  font-size: 20px;
+}
+
+  .Error-404{
+  padding: 50px;
+  }
+.error-404 h1, p{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 25px;
+}
